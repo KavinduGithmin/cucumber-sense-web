@@ -15,9 +15,23 @@
     </div>
     <nav>
       <a href="#home">Home</a>
-      <a href="#scope">Our Project</a>
+      <div class="dropdown">
+        <button class="dropbtn">Project <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#scope">Our Project</a>
+          <a href="#objectives">Objectives</a>
+          <a href="#literature">Literature</a>
+          <a href="#features">Features</a>
+        </div>
+      </div>
       <a href="#mobile-app">Mobile App</a>
-      <a href="#features">Features</a>
+      <div class="dropdown">
+        <button class="dropbtn">Journey <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#commercialization">Commercialization</a>
+          <a href="#milestones">Milestones</a>
+        </div>
+      </div>
       <a href="#team">Team</a>
       <a href="#documents">Documents</a>
       <a href="#portfolio">Portfolio</a>
@@ -51,24 +65,89 @@
     </div>
   </section>
 
-  <section id="mobile-app" class="section">
-  <div class="container">
-    <h3 class="section-title">Mobile App Demo</h3>
-    <div class="mobile-demo">
-      <div class="video-container">
-        <video autoplay muted loop playsinline width="320" height="568">
-          <source src="assets/videos/app-demo.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+  <section id="objectives" class="section">
+    <div class="container">
+      <h3 class="section-title">Main Objective</h3>
+        <div class="mainobjective-card-horizontal">
+          <p>To develop an intelligent greenhouse monitoring system for salad cucumber cultivation that integrates machine learning, sensor data analytics, and image processing to optimize yield prediction, irrigation management, and growth monitoring.</p>
+        </div>
+      <div class="section">
+        <h3 class="section-subtitle">Sub Objectives</h3>
+        <div class="objectives-stack">
+          <div class="objective-card-horizontal">
+            <div class="objective-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="objective-content">
+              <h4>Yield Prediction</h4>
+              <p>Develop machine learning models to predict cucumber yields based on environmental sensor data including light, temperature, humidity, and soil moisture.</p>
+            </div>
+          </div>
+        
+          <div class="objective-card-horizontal">
+            <div class="objective-icon">
+              <i class="fas fa-tint"></i>
+            </div>
+            <div class="objective-content">
+              <h4>Smart Irrigation</h4>
+              <p>Create an on-demand irrigation system that adjusts water supply based on real-time plant biomass measurements and soil conditions.</p>
+            </div>
+          </div>
+        
+          <div class="objective-card-horizontal">
+            <div class="objective-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="objective-content">
+              <h4>Growth Monitoring</h4>
+              <p>Implement computer vision techniques to analyze plant growth stages through regular image capture and processing.</p>
+            </div>
+          </div>
+        
+          <div class="objective-card-horizontal">
+            <div class="objective-icon">
+              <i class="fas fa-apple-alt"></i>
+            </div>
+            <div class="objective-content">
+              <h4>Fruit Analysis</h4>
+              <p>Develop image processing algorithms to detect fruit presence, size progression, and abnormalities for harvest optimization.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="content">
-        <h3>Real-Time Monitoring at Your Fingertips</h3>
-        <p>Our mobile application provides growers with instant access to greenhouse conditions, plant health status, and predictive analytics through an intuitive interface.</p>
-        <p>Key features include live sensor data visualization, growth stage predictions, disease alerts, and irrigation recommendations - all updated in real-time.</p>
+    </div> 
+  </section>
+
+  <section id="literature" class="section">
+    <div class="container">
+      <h3 class="section-title">Literature Survey</h3>
+      <div class="literature-card-big">
+        <div class="literature-row">
+          <div class="literature-col">
+            <h4>Precision Agriculture Technologies</h4>
+            <p>Recent studies in precision agriculture have demonstrated the effectiveness of IoT-based monitoring systems in greenhouse environments. Sensor networks combined with machine learning can improve crop yield predictions by up to 30% compared to traditional methods.</p>
+          </div>
+          
+          <div class="literature-col">
+            <h4>Computer Vision in Agriculture</h4>
+            <p>Research shows that computer vision techniques applied to plant monitoring can achieve over 90% accuracy in growth stage classification. Deep learning models like CNN architectures have proven particularly effective for fruit detection and size estimation.</p>
+          </div>
+        </div>
+        
+        <div class="literature-row">
+          <div class="literature-col">
+            <h4>Smart Irrigation Systems</h4>
+            <p>Studies indicate that biomass-based irrigation systems can reduce water usage by 20-40% while maintaining or improving crop yields. The integration of weight sensors with environmental data provides more precise irrigation timing than soil moisture sensors alone.</p>
+          </div>
+          
+          <div class="literature-col">
+            <h4>Cucumber-Specific Research</h4>
+            <p>For salad cucumbers specifically, research has identified optimal growth parameters including temperature ranges (22-28°C daytime), humidity levels (65-75%), and light requirements (12-16 hours daily). These parameters form the basis for our environmental monitoring thresholds.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="features" class="section">
     <div class="container">
@@ -106,6 +185,26 @@
           <p>Using high-frequency image capture and computer vision, this module detects fruit presence, size progression, and abnormalities. It allows growers to monitor individual fruits, estimate readiness for harvest, and identify growth issues, leading to improved crop quality and reduced manual inspection effort.</p>
         </div>
       </div>
+
+      <section id="mobile-app" class="section">
+    <div class="container">
+      <h3 class="section-title">Mobile App Demo</h3>
+      <div class="mobile-demo">
+        <div class="video-container">
+          <video autoplay muted loop playsinline width="320" height="568">
+            <source src="assets/videos/app-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="content">
+          <h3>Real-Time Monitoring at Your Fingertips</h3>
+          <p>Our mobile application provides growers with instant access to greenhouse conditions, plant health status, and predictive analytics through an intuitive interface.</p>
+          <p>Key features include live sensor data visualization, growth stage predictions, disease alerts, and irrigation recommendations - all updated in real-time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
       <!-- Technologies Section -->
       <div class="technologies-section">
@@ -273,6 +372,7 @@
         <h4 class="section-title">Supervisors</h4>
         <div class="supervisors-grid">
           <div class="supervisor-card">
+            <img src="assets/images/supervisors/supervisor.jpg" alt="Ms. Utpala Samarakoon" class="sup-photo" />
             <h4>Supervisor</h4>
             <p>Ms. Utpala Samarakoon</p>
             <p>Department of Computer Science</p>
@@ -282,6 +382,7 @@
           </div>
           
           <div class="supervisor-card">
+            <img src="assets/images/supervisors/co-supervisor.jpg" alt="Ms. Aruni Premaratne" class="sup-photo" />
             <h4>Co-supervisor</h4>
             <p>Ms. Aruni Premaratne</p>
             <p>Department of Information Technology</p>
@@ -291,6 +392,7 @@
           </div>
           
           <div class="supervisor-card">
+            <img src="assets/images/supervisors/external-supervisor.jpg" alt="Dr. Lasantha Britto Adikaram" class="sup-photo" />
             <h4>External Supervisor</h4>
             <p>Dr. Lasantha Britto Adikaram</p>
             <p>Department of Agricultural Computer Science</p>
@@ -308,12 +410,18 @@
       <h3 class="section-title">Documents</h3>
       <div class="scope-content">
         <ul>
-          <li><a href="assets/documents/CucumberSense_Final_Thesis.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Final Thesis Document</a></li>
-          <li><a href="assets/documents/CucumberSense_Presentation.pdf" target="_blank"><i class="fas fa-file-powerpoint"></i> Final Presentation Slides</a></li>
           <li><a href="assets/documents/Proposal_Report_Kavindu.pdf" target="_blank"><i class="fas fa-file-alt"></i> Proposal Report - Kavindu Edirisinghe</a></li>
           <li><a href="assets/documents/Proposal_Report_Sajini.pdf" target="_blank"><i class="fas fa-file-alt"></i> Proposal Report - Sajini Wijesinghe</a></li>
           <li><a href="assets/documents/Proposal_Report_Dinandi.pdf" target="_blank"><i class="fas fa-file-alt"></i> Proposal Report - Dinandi Somarathne</a></li>
           <li><a href="assets/documents/Proposal_Report_Binuri.pdf" target="_blank"><i class="fas fa-file-alt"></i> Proposal Report - Binuri Thilakarathne</a></li>
+          <li><a href="assets/documents/Data Analysis Report.pdf" target="_blank"><i class="fas fa-file-alt"></i> Data Analysis Report </a></li>
+          <li><a href="assets/documents/MLOps Report.pdf" target="_blank"><i class="fas fa-file-alt"></i> MLOps Report </a></li>
+          <li><a href="assets/documents/Research Paper_Kavindu.pdf" target="_blank"><i class="fas fa-file-alt"></i> Research Paper - Kavindu Edirisinghe</a></li>
+          <li><a href="assets/documents/Research Paper_Sajini.pdf" target="_blank"><i class="fas fa-file-alt"></i> Research Paper - Sajini Wijesinghe</a></li>
+          <li><a href="assets/documents/Research Paper_Dinandi.pdf" target="_blank"><i class="fas fa-file-alt"></i> Research Paper - Dinandi Somarathne</a></li>
+          <li><a href="assets/documents/Research Paper_Binuri.pdf.pdf" target="_blank"><i class="fas fa-file-alt"></i> Research Paper - Binuri Thilakarathne</a></li>
+          <li><a href="assets/documents/CucumberSense_Final_Thesis.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Final Thesis Document</a></li>
+          <li><a href="assets/documents/CucumberSense_Presentation.pdf" target="_blank"><i class="fas fa-file-powerpoint"></i> Final Presentation Slides</a></li>
         </ul>
       </div>
     </div>
@@ -480,21 +588,72 @@
   </footer>
 
   <script>
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!e.target.matches('.dropbtn')) {
+        const dropdowns = document.querySelectorAll('.dropdown-content');
+        dropdowns.forEach(dropdown => {
+          if (dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+          }
+        });
+      }
+    });
+
+    // Dropdown functionality
+    document.querySelectorAll('.dropbtn').forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const dropdown = button.nextElementSibling;
+        if (dropdown.style.display === 'block') {
+          dropdown.style.display = 'none';
+        } else {
+          // Close any open dropdowns first
+          document.querySelectorAll('.dropdown-content').forEach(d => {
+            d.style.display = 'none';
+          });
+          dropdown.style.display = 'block';
+        }
+      });
+    });
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', function(e) {
         e.preventDefault();
         
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
+          behavior: 'smooth',
+          block: 'start'
         });
       });
     });
 
+    // Highlight active nav item
+    const sections = document.querySelectorAll('section');
+    const navItems = document.querySelectorAll('nav a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === `#${current}`) {
+          item.classList.add('active');
+        }
+      });
+    });
+
     // Animation for sections when they come into view
-    const sections = document.querySelectorAll('.section');
-    
-    const observer = new IntersectionObserver((entries) => {
+    const sectionObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.style.opacity = 1;
@@ -507,7 +666,7 @@
       section.style.opacity = 0;
       section.style.transform = 'translateY(20px)';
       section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      observer.observe(section);
+      sectionObserver.observe(section);
     });
 
     // Team Carousel Functionality
